@@ -15,6 +15,10 @@ html {
 	position: relative;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 .flex {
 	display: flex;
 }
@@ -51,8 +55,6 @@ nav {
 		height: 68px;
 		width: 454px;
 		border-radius: 10px;
-		background-color: rgb(39, 39, 39, 0.4);
-		box-shadow: 0px 4px 50px 10px black;
 		z-index: 5;
 	}
 
@@ -73,15 +75,17 @@ nav {
 		gap: 30px;
 		padding: 20px 10px;
 		border-radius: 10px;
-		background-color: rgb(39, 39, 39, 0.4);
-		box-shadow: 0px 4px 50px 10px black;
 	}
 
 		.nav-links a {
 			text-decoration: none;
 			color: white;
-			/* text-shadow: black 0px 0px 15px; */
 		}
+
+.nav-box-shadow {
+	background-color: rgb(39, 39, 39, 0.4);
+	box-shadow: 0px 4px 50px 10px black;
+}
 
 /*! HEADER SECTION */
 .parallax-container {
