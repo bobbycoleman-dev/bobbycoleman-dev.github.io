@@ -82,6 +82,15 @@ nav {
 			color: white;
 		}
 
+		.nav-links a:hover {
+			text-decoration: underline;
+		}
+
+		.nav-links a:active {
+			text-decoration: underline;
+			color: black;
+		}
+
 .nav-box-shadow {
 	background-color: rgb(39, 39, 39, 0.4);
 	box-shadow: 0px 4px 50px 10px black;
