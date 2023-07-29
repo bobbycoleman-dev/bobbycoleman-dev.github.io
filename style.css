@@ -7,83 +7,98 @@
 		sans-serif;
 }
 
-body {
-	background-color: #474747;
+body,
+html {
+	height: 100vh;
+	background-color: rgb(39, 39, 39);
+}
+
+.flex {
+	display: flex;
+}
+
+.justify-sb {
+	justify-content: space-between;
 }
 
 nav {
-	background-color: #474747;
-	opacity: 0.95;
-	height: 80px;
-	padding: 15px 50px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	position: fixed;
-	width: 100%;
 	top: 0;
+	right: 0;
 	left: 0;
-	box-shadow: 2px 6px 20px 2px rgb(21, 219, 147, 0.4);
+	color: white;
+	font-size: 18pt;
+	padding: 20px 100px;
+	z-index: 55;
 }
 
-.nav-logo {
-	height: 50px;
+nav > p {
+	border: 1px solid white;
+	padding: 5px;
+	/* box-shadow: black 0px 0px 10px;
+	text-shadow: black 0px 0px 5px;
+	font-weight: 600; */
 }
 
 .nav-links {
-	display: flex;
-	align-items: center;
 	gap: 30px;
 }
 
 .nav-links a {
 	text-decoration: none;
 	color: white;
-	font-size: 14pt;
+	/* text-shadow: black 0px 0px 15px; */
 }
 
-.resume-btn {
-	border: 2px solid #15db93;
-	padding: 8px;
+.parallax-container {
+	position: absolute;
+	width: 100%;
+	background-image: url("./images/19606.jpg");
+	min-height: 1040px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-main {
-	color: azure;
-	padding: 50px 80px;
-	margin-top: 150px;
+.foreground {
+	position: sticky;
+	top: 0px;
+	width: 100%;
+	margin-left: 10%;
+	margin-bottom: 100px;
+	transform-origin: 0;
+	transform: translateZ(3px) scale(0.625);
 }
 
-.introduction-section {
-	margin-left: 200px;
-	margin-bottom: 200px;
-}
-
-.intro {
-	color: #15db93;
-	font-size: 18pt;
+.introduction {
+	text-align: center;
+	color: white;
+	position: sticky;
+	top: 0px;
+	margin-top: 300px;
 }
 
 h1 {
-	font-size: 42pt;
+	font-size: 8em;
+	width: fit-content;
+	padding: 10px 30px;
+	height: 100%;
+	z-index: 5;
+	text-shadow: #2d7fd7 0px 0px 60px;
 }
 
-.occupation {
-	color: #c3c3c3;
-	font-size: 42pt;
+h2 {
+	font-size: 3.5em;
+	width: fit-content;
+	padding: 10px 30px;
+	height: 100%;
+	text-shadow: #2d7fd7 0px 0px 60px;
 }
 
-.dispatch-pro-section {
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-	align-items: center;
-}
-
-.dispatch-pro-link {
-	color: #15db93;
-}
-
-.dispatch-pro-img {
-	height: 500px;
-	width: 650px;
+#about {
+	height: 5000px;
+	padding-top: 1090px;
+	color: white;
+	text-align: center;
 }
