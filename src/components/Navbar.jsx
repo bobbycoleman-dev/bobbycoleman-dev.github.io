@@ -1,32 +1,29 @@
 import React from "react";
+import NavMenuMobile from "./NavMenuMobile";
+import NavMenu from "./NavMenu";
 
 const Navbar = () => {
 	return (
-		<div className="navbar px-10">
+		<div className="navbar px-2 md:px-10">
 			<div className="flex-1">
-				<a className="btn btn-ghost normal-case text-xl">BC</a>
+				<a href="/" className="btn btn-ghost normal-case text-xl border">
+					BC
+				</a>
 			</div>
-			<div className="flex-none">
-				<button className="btn btn-square btn-ghost">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 24 24"
-						className="inline-block w-5 h-5 stroke-current">
-						<path
-							strokeLinecap="round"
-							strokeLinejoin="round"
-							strokeWidth="2"
-							d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path>
-					</svg>
-				</button>
+			<div className="flex-none gap-4">
+				<section className="hidden md:block">
+					<NavMenu />
+				</section>
+				<section className="md:hidden">
+					<NavMenuMobile />
+				</section>
 				<label className="swap swap-rotate">
 					{/* this hidden checkbox controls the state */}
 					<input type="checkbox" />
 
 					{/* sun icon */}
 					<svg
-						className="swap-on fill-current w-10 h-10"
+						className="swap-on fill-current w-8 h-8"
 						xmlns="http://www.w3.org/2000/svg"
 						viewBox="0 0 24 24"
 						data-set-theme="corporate">
@@ -35,7 +32,7 @@ const Navbar = () => {
 
 					{/* moon icon */}
 					<svg
-						className="swap-off fill-current w-10 h-10"
+						className="swap-off fill-current w-8 h-8"
 						xmlns="http://www.w3.org/2000/svg"
 						viewBox="0 0 24 24"
 						data-set-theme="forest">
